@@ -10,7 +10,7 @@ def sepia(input_img):
 	])
 	sepia_img = input_img.dot(sepia_filter.T)
 	sepia_img /= sepia_img.max()
-	sleep(5)
+	#sleep(5)
 	return sepia_img
 
 demo = gr.Interface(sepia, gr.Image(shape=(200, 200)), "image")
