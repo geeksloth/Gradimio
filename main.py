@@ -14,4 +14,4 @@ def sepia(input_img):
 	return sepia_img
 
 demo = gr.Interface(sepia, gr.Image(shape=(200, 200)), "image")
-demo.launch()
+demo.launch(server_name="0.0.0.0")
