@@ -14,6 +14,7 @@ docker run -it --name=gradimio -p 7860:7860 geeksloth/gradimio:latest
 ```
 then access it via your browser:
 ```127.0.0.1:7860```
+The image is mainly built in ARMv8, ie., Apple Silicon M1. So if you could not run the image, I recommend you to follow the next following method instead.
 
 ## More practical way
 1. Clone this repo and get into it
