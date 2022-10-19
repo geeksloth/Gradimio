@@ -8,6 +8,6 @@ services:
     ports:
       - "7860:7860"
     volumes:
-      - ./src:/app
-    working_dir: /app
+      - .:/gradimio
+    working_dir: /gradimio
     command: ["python3", "main.py"]
