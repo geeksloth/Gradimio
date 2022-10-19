@@ -23,11 +23,11 @@ The image is mainly built in ARMv8, ie., Apple Silicon M1. So if you could not r
 git clone https://github.com/geeksloth/gradimio.git && cd gradimio
 ```
 
-2. Prepare the Docker image
+2. Prepare the Docker image, do only one of these options:
 
     1. Build your own Docker image from provied Dockerfile:
 ``` docker build -t gradimio --network=host .```
-    2. clone the image from GeekSloth's repo:
+    2. Clone the image from GeekSloth's repo:
 ``` docker pull geeksloth/gradimio:latest```
 
 
