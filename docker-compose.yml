@@ -2,7 +2,7 @@ version: '3'
 services:
   gradimio:
     build:
-      network: host
+      #network: host
       dockerfile: "Dockerfile"
       context: .
     ports:
