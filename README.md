@@ -8,30 +8,26 @@ It's just a simpliest demo of the [Gradio](https://gradio.app/ "Gradio") for the
 **Yes, that's it!**
 
 # Getting Started
-## Simplest way
-```bash
-docker run -it --name=gradimio -p 7860:7860 geeksloth/gradimio:latest
-```
-then access it via your browser:
-```127.0.0.1:7860```
-
-The image is mainly built in ARMv8, ie., Apple Silicon M1. So if you could not run the image, I recommend you to follow the next following method instead.
-
-## More practical way
 1. Clone this repo and get into it
 ```bash
 git clone https://github.com/geeksloth/gradimio.git && cd gradimio
 ```
+2. Run the container
+```bash
+docker-compose up
+```
+3. Access it via your browser:
+```127.0.0.1:7860```
 
-2. Prepare the Docker image, do only one of these options:
 
-    1. Build your own Docker image from provied Dockerfile:
-``` docker build -t gradimio --network=host .```
-    2. Clone the image from GeekSloth's repo:
-``` docker pull geeksloth/gradimio:latest```
+## Further practical way
 
+1. Build your own Docker image from provied Dockerfile:
+```bash
+docker build -t gradimio --network=host .
+```
 
-3. Run the container from previous built image, and also binding the current directory into it.
+2. Run the container from previous built image, and also binding the current directory into it.
 ```bash
 docker run -it --rm --name=gradimio -p 7860:7860 -v $PWD:/gradimio gradimio:latest bash
 ```
