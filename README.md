@@ -1,5 +1,5 @@
 # Gradimio
-![Gradimio](static/ss.jpg "Gradimio screenshot")
+
 Gradio based image input-process-output template.
 There is nothing new in this repo.
 It's just a simpliest demo of the [Gradio](https://gradio.app/ "Gradio") for the purpose of image uploading, processing, and display the result.
@@ -7,7 +7,10 @@ It's just a simpliest demo of the [Gradio](https://gradio.app/ "Gradio") for the
 **Gradimio** is derived from Gradio + image + input-process-output.
 **Yes, that's it!**
 
-# Getting Started
+![Gradimio](static/ss.jpg "Gradimio screenshot")
+
+
+## Getting Started
 1. Clone this repo and get into it
 ```bash
 git clone https://github.com/geeksloth/gradimio.git && cd gradimio
